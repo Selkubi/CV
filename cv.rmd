@@ -44,16 +44,12 @@ if(params$pdf_mode) {
 Aside
 ================================================================================
 
-```{r}
-# Build interactive network of positions colored by section
-# and connected if they occurred in the same year
-datadrivencv::build_network_logo(CV$entries_data)
-```
+![](selin7.jpg){width=95%}
 
 
 ```{r}
 if(params$pdf_mode){
-  cat("View this CV online with links at _nickstrayer.me/datadrivencv/_")
+  cat("View this CV online with links at [Selkubi](https://selkubi.github.io/cv.html)")
 } else {
   cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/Selkubi/CV/selin_kubilay_cv_pdf)")
 }
@@ -137,9 +133,9 @@ CV <- print_section(CV, 'teaching_positions')
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
+Made with the R package [**datadrivencv**](https://github.com/nstrayer/datadrivencv). 
 
-The source code is available [on github.com/nstrayer/cv](https://github.com/nstrayer/cv).
+The source code is available [on github.com/Selkubi/cv](https://github.com/Selkubi/CV/tree/main).
 
 Last updated on `r Sys.Date()`.
 </p>

@@ -10,14 +10,14 @@
 :root {
   --main-text-family: "Raleway", sans-serif;
   --header-text-family: "Lora", serif;
-  --main-text-color: #444;
+  --main-text-color: #1F1F1F;
   --header-text-color: #000;
   --sidebar-width: 12rem; /* Shrink sidebar width  */
-  --sidebar-background-color: hsl(210, 100%, 98%); /* Make sidebar blue */
+  --sidebar-background-color: hsl(60, 85%, 93%); /* Make sidebar blue */
   --sidebar-horizontal-padding: 0.01in; /* Reduce sidebar padding */
   --decorator-outer-dim: 8px; /* Make position deliniating circles larger */
-  --decorator-color: hsl(210, 100%, 35%);
-  --point-circle-color: hsl(210, 100%, 25%);
+  --decorator-color: hsl(200, 100%, 18%);
+  --point-circle-color: hsl(200, 100%, 15%);
   --decorator-line-width: 1pt;
 }
 
@@ -25,7 +25,7 @@
 /* Update main body text */
 body {
   font-family: var(--main-text-family);
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.3;
   color: var(--main-text-color);
 }
