@@ -43,19 +43,17 @@ if(params$pdf_mode) {
 
 Aside
 ================================================================================
-
-![](selin7.jpg){width=95%}
-
+![](selin7.jpg){style="margin-top: -90px;" }
 
 ```{r}
 if(params$pdf_mode){
   cat("View this CV online with links at [Selkubi](https://selkubi.github.io/cv.html)")
 } else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/Selkubi/CV/selin_kubilay_cv_pdf)")
+  cat("[<i class='fas fa-download'></i> See the html of this CV](https://selkubi.github.io/cv.html)")
 }
 ```
 
-Contact {#contact}
+About Me {#contact}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -64,7 +62,7 @@ CV |> print_contact_info()
 
 
 
-Language Skills {#skills}
+Programming Skills {#skills}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -72,7 +70,7 @@ CV |> print_skill_bars()
 ```
 
 
-OTHER SKILLS
+Technical SKILLS
 --------------------------------------------------------------------------------
 ```{r}
   CV |> print_skill_bars_other()
@@ -149,4 +147,5 @@ Selected Publications, Posters, and Talks {data-icon=book}
 ```{r}
 CV <- print_section(CV, 'academic_articles')
 ```
+
 
